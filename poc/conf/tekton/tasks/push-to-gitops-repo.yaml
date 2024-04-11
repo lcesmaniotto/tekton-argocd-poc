@@ -19,7 +19,7 @@ spec:
         #!/bin/sh
         set -e
 
-        git config --global user.email "luiz.esmaniotto@safesyst.com.br"
+        git config --global user.email "esmaniotto.luiz@gmail.com"
         git config --global user.name "lesmaniotto"
 
         git clone -b master $(params.url-gitops) gitops
@@ -31,5 +31,5 @@ spec:
         cat $(params.deployment-file)
 
         git add -u
-        git commit -m "[tekton] updating deployment"
+        git commit -m "[lcesmaniotto] updating deployment"
         git push
