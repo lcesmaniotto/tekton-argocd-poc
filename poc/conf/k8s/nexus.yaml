@@ -4,7 +4,7 @@ metadata:
   name: nexus
   namespace: cicd
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: nexus
   ports:

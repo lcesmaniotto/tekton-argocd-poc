@@ -16,15 +16,15 @@
     <mirror>
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus:9001/repository/maven-public/</url>
+      <url>http://nexus.cicd:8090/repository/maven-public/</url>
     </mirror>
   </mirrors>
   <profiles>
     <profile>
       <id>nexus</id>
       <properties>
-        <altSnapshotDeploymentRepository>snapshots::default::http://nexus:9001/repository/maven-snapshots</altSnapshotDeploymentRepository>
-        <altReleaseDeploymentRepository>releases::default::http://nexus:9001/repository/maven-releases</altReleaseDeploymentRepository>
+        <altSnapshotDeploymentRepository>snapshots::default::http://nexus.cicd:8090/repository/maven-snapshots</altSnapshotDeploymentRepository>
+        <altReleaseDeploymentRepository>releases::default::http://nexus.cicd:8090/repository/maven-releases</altReleaseDeploymentRepository>
       </properties>
       <!--Enable snapshots for the built in central repo to direct -->
       <!--all requests to nexus via the mirror -->

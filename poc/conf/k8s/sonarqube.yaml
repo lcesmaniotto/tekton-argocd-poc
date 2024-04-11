@@ -4,12 +4,12 @@ metadata:
   name: sonarqube-service
   namespace: cicd
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: sonarqube
   ports:
   - protocol: TCP
-    port: 9000
+    port: 80
     targetPort: 9000
 ---
 apiVersion: apps/v1

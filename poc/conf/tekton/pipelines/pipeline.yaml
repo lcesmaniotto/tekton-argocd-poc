@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: example-ci-pipeline
+  name: ligga-ci-pipeline
   namespace: cicd
 spec:
   params:
